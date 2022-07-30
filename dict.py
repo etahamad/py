@@ -21,5 +21,14 @@ myList = [
     }
 ]
 
-print(dictionary['city'][0])
-print(myList[1]['city'][2])
+myDictWithCustomKeys = {
+    123: 'Omar',
+    123: 'Potato',
+    True: 'Hello',
+    'isMagic': True
+
+}
+
+# print(dictionary['city'][0])
+# print(myList[1]['city'][2])
+print(myDictWithCustomKeys[123])
