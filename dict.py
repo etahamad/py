@@ -29,6 +29,20 @@ myDictWithCustomKeys = {
 
 }
 
+user = {
+    'username': 'etahamad',
+    'first': 'Omar',
+    'last': 'Hamad',
+    'age': '21',
+    'city': 'Cairo',
+    'country': 'Egypt'
+}
+
+user2 = dict(username='etahamad', first='Omar', last='Hamad', age='21', city='Cairo', country='Egypt') # not common in python
+
 # print(dictionary['city'][0])
 # print(myList[1]['city'][2])
-print(myDictWithCustomKeys[123])
+# print(myDictWithCustomKeys[123])
+print(user.get('checkget', 'Not Found'))
+print(user.get('username', 'Not Found'))
+print(user2)
