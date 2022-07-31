@@ -7,14 +7,14 @@ amazonCart = [
 ]
 
 
-newCart = amazonCart[:] # copy list
+newCart = amazonCart[:]  # copy list
 newCart[0] = 'laptop'
 print(newCart)
 print(amazonCart)
 
 # VS
 
-newCart = amazonCart # modify original list
+newCart = amazonCart  # modify original list
 newCart[0] = 'laptop'
 print(newCart)
 print(amazonCart)

@@ -7,5 +7,5 @@ newBasket.sort()
 newBasket.reverse()
 print(newBasket)
 
-print(sorted(basket)) # creats a new copy of the list and sorts it
+print(sorted(basket))  # creats a new copy of the list and sorts it
 print(basket)

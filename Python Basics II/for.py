@@ -14,7 +14,7 @@ for i in user.keys():
     print(i)
 
 # ex: counter
-myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 counter = 0
 for i in myList:
@@ -24,7 +24,7 @@ print(counter)
 for i in range(0, 11, 1):
     print(i)
 
-for i in range(10, 0, -2): # range(10, 0) will do noting!
+for i in range(10, 0, -2):  # range(10, 0) will do noting!
     print(i)
 
 for i in range(2):

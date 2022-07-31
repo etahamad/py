@@ -5,10 +5,11 @@ print(name[:len(name)])
 
 quote = 'if you are reading this you are stalking me'
 
-print(quote.capitalize()) 
+print(quote.capitalize())
 print(quote.upper())
 
-print(quote.find('you')) # returns the index of the first occurrence of the substring
+# returns the index of the first occurrence of the substring
+print(quote.find('you'))
 print(quote.replace('stalking me', 'a good person'))
 
 print(quote)

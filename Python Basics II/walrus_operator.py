@@ -7,4 +7,4 @@ while ((longStringLen := len(longString)) > 1):
     print(longStringLen)
     longString = longString[:-1]
 
-print(longString) # t....his is a long string
+print(longString)  # t....his is a long string

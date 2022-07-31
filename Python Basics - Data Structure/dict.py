@@ -8,16 +8,16 @@ dictionary = {
 
 myList = [
     {
-    'name': 'Omar',
-    'age': 21,
-    'city': ['10th of Ramadan', 'Cairo', 'Alexandria'],
-    'country': 'Egypt'
+        'name': 'Omar',
+        'age': 21,
+        'city': ['10th of Ramadan', 'Cairo', 'Alexandria'],
+        'country': 'Egypt'
     },
     {
-    'name': 'Potato',
-    'age': 21,
-    'city': ['New York', 'Los Angeles', 'Chicago'],
-    'country': 'Egypt'
+        'name': 'Potato',
+        'age': 21,
+        'city': ['New York', 'Los Angeles', 'Chicago'],
+        'country': 'Egypt'
     }
 ]
 
@@ -38,7 +38,8 @@ user = {
     'country': 'Egypt'
 }
 
-user2 = dict(username='etahamad', first='Omar', last='Hamad', age=21, city='Cairo', country='Egypt') # not common in python
+user2 = dict(username='etahamad', first='Omar', last='Hamad',
+             age=21, city='Cairo', country='Egypt')  # not common in python
 
 # print(dictionary['city'][0])
 # print(myList[1]['city'][2])
