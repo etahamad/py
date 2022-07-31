@@ -1,8 +1,12 @@
 myList = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 
-duplicates = []
-for i in myList:
-    if myList.count(i) > 1:
-        if i not in duplicates:
-            duplicates.append(i)
-print(duplicates)
+tempDuplicates = []
+
+def checkDup(listofItems):
+    for i in listofItems:
+        if listofItems.count(i) > 1:
+            if i not in tempDuplicates:
+                tempDuplicates.append(i)
+    print(tempDuplicates)
+
+checkDup(myList)
