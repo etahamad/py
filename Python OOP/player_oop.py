@@ -3,19 +3,27 @@ class PlayerCharacter:
 
     def __init__(self, name, health=100):
         if PlayerCharacter.membership:
-            self.name = name
+            self._name = name
             if health > 0:
-                self.health = health
-            self.power = 10
-            self.coins = 20
-            self.alive = True
+                self._health = health
+            self._power = 10
+            self._coins = 20
+            self._alive = True
 
     def run(self):
-        self.health -= 10
-        print(f'Running, health: {self.health}')
+        self._health -= 10
+        print(f'Running, health: {self._health}')
+
+    def speak(self):
+        print(f'My name is {self._name} and I have {self._coins} coins.')
 
 
 player1 = PlayerCharacter('Omar', 100)
-print(player1.name)
+print(player1._name)
 player1.run()
-player1.run()
+player1.speak()
+
+player1.name = "!!!!"
+player1.speak = "BOOOOOO"
+
+print(player1.speak)
