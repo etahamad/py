@@ -1,22 +1,12 @@
 def my_decorator(func):
-    def wrapper():
-        print("Something is happening before the function is called.")
-        func()
-        print("Something is happening after the function is called.")
+    def wrapper(*args, **kwargs):
+        func(*args, **kwargs)
     return wrapper
 
 
 @my_decorator
-def hello():
-    print("Hello")
+def hello(greeting, emoji=':)'):
+    print(greeting, emoji)
 
 
-@my_decorator
-def bye():
-    print("Bye")
-
-
-hello()
-bye()
-
-my_decorator(hello)()  # This is the same as calling hello()
+hello('Hello')
