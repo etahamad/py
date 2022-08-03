@@ -1,5 +1,7 @@
-import utility
-import shopping.shopping_cart
+from utility import *
+from shopping.more_shopping.shopping_cart import buy
 
-print(utility.multiply(1, 2))
-print(shopping.shopping_cart.buy('something'))
+print(multiply(1, 2))
+print(divide(6, 3))
+print(buy('apple'))
+print(max([1, 2, 3]))
