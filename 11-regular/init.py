@@ -1,10 +1,7 @@
 import re
 
-pattern = re.compile('search for a substring in a string substring')
-string = 'search for a substring in a string substring Omar'
+pattern = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
+string = 'c@c.io'
 
 a = pattern.search(string)
-b = pattern.findall(string)
-c = pattern.fullmatch(string)
-d = pattern.match(string)
-print(d)
+print(a)
