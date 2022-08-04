@@ -1,3 +1,2 @@
-with open('sad.txt', 'w') as f:
-    text = f.write('This is a sad story')
-    print(text)
+with open('./app/sad.txt', 'r') as f:
+    print(f.read())
