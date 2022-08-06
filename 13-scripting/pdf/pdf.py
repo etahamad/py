@@ -1,8 +1,14 @@
 import PyPDF2
+import sys
 
-pdfFile = open('dummy.pdf', 'rb')
-pdfReader = PyPDF2.PdfFileReader(pdfFile)
-print(pdfReader.numPages)
-page = pdfReader.getPage(0)
-print(page.extractText())
-pdfFile.close()
+input = sys.argv[1:]
+
+
+def pdf_compiner(pdf_list):
+    merger = PyPDF2.PdfFileMerger()
+    for pdf in pdf_list:
+        merger.append(pdf)
+    merger.write('combined.pdf')
+
+
+pdf_compiner(input)
